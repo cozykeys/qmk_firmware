@@ -1,11 +1,5 @@
 # bloomer
 
-PROGESS:
-`https://docs.qmk.fm/#/hand_wire`
-- Getting Some Basic Firmware Set Up
-    - [x] config.h
-    - [x] bloomer.h
-
 ![bloomer](http://assets.cozykeys.xyz/images/keyboards/bloomer/bloomer-front_1600x1600.jpg)
 
 An 87-key ergonomic mechanical keyboard
