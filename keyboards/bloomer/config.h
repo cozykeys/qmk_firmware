@@ -19,13 +19,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "config_common.h"
 
-/* USB Device descriptor parameter */
-#define VENDOR_ID 0xFEED
-#define PRODUCT_ID 0x0000
-#define DEVICE_VER 0x0002
-#define MANUFACTURER Paul Ewing
-#define PRODUCT bloomer
-#define DESCRIPTION An 87-key ergonomic mechanical keyboard
+// USB Device descriptor parameter
+#define VENDOR_ID    0xFEED
+#define PRODUCT_ID   0x1191
+#define DEVICE_VER   0x0002
+#define MANUFACTURER CozyKeys
+#define PRODUCT      bloomer
+#define DESCRIPTION  An 87-key ergonomic mechanical keyboard
 
 // Key matrix size
 #define MATRIX_ROWS 6
@@ -37,18 +37,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define UNUSED_PINS
 #define DIODE_DIRECTION COL2ROW
 
+#ifdef RGBLIGHT_ENABLE
 #define RGB_DI_PIN D7
-#ifdef RGB_DI_PIN
-  #define RGBLED_NUM 12
-  #define RGBLIGHT_HUE_STEP 8
-  #define RGBLIGHT_SAT_STEP 8
-  #define RGBLIGHT_VAL_STEP 8
-  #define RGBLIGHT_LIMIT_VAL 255
-  #define RGBLIGHT_SLEEP
-  #define RGBLIGHT_ANIMATIONS
-  #define RGBLIGHT_BREATHE_TABLE_SIZE    256
-  #define RGBLIGHT_EFFECT_BREATHE_CENTER 1.85
-  #define RGBLIGHT_EFFECT_BREATHE_MAX    255
+#define RGBLED_NUM 12
+#define RGBLIGHT_HUE_STEP 8
+#define RGBLIGHT_SAT_STEP 8
+#define RGBLIGHT_VAL_STEP 8
+#define RGBLIGHT_LIMIT_VAL 255
+#define RGBLIGHT_SLEEP
+#define RGBLIGHT_ANIMATIONS
+#define RGBLIGHT_BREATHE_TABLE_SIZE    256
+#define RGBLIGHT_EFFECT_BREATHE_CENTER 1.85
+#define RGBLIGHT_EFFECT_BREATHE_MAX    255
 #endif
 
 // Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed
