@@ -2,7 +2,7 @@
 MCU = atmega32u4
 
 # Bootloader
-BOOTLOADER = atmel-dfu
+BOOTLOADER = caterina
 
 # Build Options
 BOOTMAGIC_ENABLE = no       # Virtual DIP switch configuration(+1000)
